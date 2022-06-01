@@ -13,7 +13,75 @@
             <a href="#">Trello</a>
         </nav>
         <main class="main-content">
-            <div class="items-container" draggable="true"></div>
+            <div class="items-container" draggable="true">
+                <div class="top-container">
+                    <h2>To-do</h2>
+                    <button class="delete-container-btn">X</button>
+                </div>
+                <ul></ul>
+                <button class="add-item-btn">Ajouter une tâche</button>
+                <form autocomplete="off">
+                    <div class="top-form-container">
+                        <label for="item">Ajouter une tâche</label>
+                        <button type="button" class="close-form-btn">X</button>
+                    </div>
+                    <input type="text" name="item" id="item" placeholder="Ajouter une tâche" />
+                    <span class="validation-msg"></span>
+                    <button type="submit">Ajouter</button>
+                </form>
+            </div>
+            <div class="items-container" draggable="true">
+                <div class="top-container">
+                    <h2>En cours</h2>
+                    <button class="delete-container-btn">X</button>
+                </div>
+                <ul></ul>
+                <button class="add-item-btn">Ajouter une tâche</button>
+                <form autocomplete="off">
+                    <div class="top-form-container">
+                        <label for="item">Ajouter une tâche</label>
+                        <button type="button" class="close-form-btn">X</button>
+                    </div>
+                    <input type="text" name="item" id="item" placeholder="Ajouter une tâche" />
+                    <span class="validation-msg"></span>
+                    <button type="submit">Ajouter</button>
+                </form>
+            </div>
+            <div class="items-container" draggable="true">
+                <div class="top-container">
+                    <h2>Terminé</h2>
+                    <button class="delete-container-btn">X</button>
+                </div>
+                <ul></ul>
+                <button class="add-item-btn">Ajouter une tâche</button>
+                <form autocomplete="off">
+                    <div class="top-form-container">
+                        <label for="item">Ajouter une tâche</label>
+                        <button type="button" class="close-form-btn">X</button>
+                    </div>
+                    <input type="text" name="item" id="item" placeholder="Ajouter une tâche" />
+                    <span class="validation-msg"></span>
+                    <button type="submit">Ajouter</button>
+                </form>
+            </div>
+
+            <div class="add-new-container">
+                <button class="add-container-btn">Ajouter un autre block</button>
+                <form autocomplete="off">
+                    <div class="top-form-container">
+                        <label for="new-container">Ajouter un autre block</label>
+                        <button type="button" class="close-form-btn">X</button>
+                    </div>
+                    <input
+                        type="text"
+                        name="new-container"
+                        id="new-container"
+                        placeholder="Ajouter un autre block"
+                    />
+                    <span class="validation-msg"></span>
+                    <button type="submit">Ajouter</button>
+                </form>
+            </div>
         </main>
         <script src="app.js"></script>
     </body>
