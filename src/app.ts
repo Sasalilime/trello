@@ -1,7 +1,14 @@
 const itemsContainer = document.querySelectorAll('.items-container') as NodeListOf<HTMLDivElement>;
+let actualContainer: HTMLDivElement,
+    actualBtn: HTMLButtonElement,
+    actualTextInput: HTMLInputElement,
+    actualForm: HTMLFormElement,
+    actualValidation: HTMLSpanElement,
+    actualUl: HTMLUListElement;
 
 function addContainerListeners(currentContainer: HTMLDivElement) {
     const currentContainerDeletionBtn = currentContainer.querySelector('.delete-container-btn') as HTMLButtonElement;
+    const currentAddItemBtn = currentContainer.querySelector('.add-item-btn') as HTMLButtonElement;
     deleteBtnListeners(currentContainerDeletionBtn);
 }
 

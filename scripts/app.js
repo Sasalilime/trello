@@ -1,7 +1,9 @@
 "use strict";
 const itemsContainer = document.querySelectorAll('.items-container');
+let actualContainer, actualBtn, actualTextInput, actualForm, actualValidation, actualUl;
 function addContainerListeners(currentContainer) {
     const currentContainerDeletionBtn = currentContainer.querySelector('.delete-container-btn');
+    const currentAddItemBtn = currentContainer.querySelector('.add-item-btn');
     deleteBtnListeners(currentContainerDeletionBtn);
 }
 itemsContainer.forEach((container) => {
